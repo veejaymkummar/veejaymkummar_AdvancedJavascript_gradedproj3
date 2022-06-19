@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Test Application</title>
+    <link rel="stylesheet" href="./Style/myStyle.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading">
+            Test your Typing Speed
+        </div>
+        <div class="scoreBoard">
+            <div class="wordPerMinute">
+                <div class="header">WPM</div>
+                <div class="wpm">0</div>
+            </div>
+            <div class="charecterPerMinute">
+                <div class="header">CPM</div>
+                <div class="cpm">0</div>
+            </div>
+            <div class="errorsCounter">
+                <div class="header">Errors</div>
+                <div class="errors">0</div>
+            </div>
+            <div class="timeCounter">
+                <div class="header">Time</div>
+                <div class="time">0s</div>
+            </div>
+            <div class="accuracyCounter">
+                <div class="header">% accuracy</div>
+                <div class="accuracy">0 %</div>
+            </div>
+        </div>
+        <div id="typingText">
+            Click on the area below to start typing ...
+        </div>
+        <textarea id="typingArea" placeholder="Start typing here ..." onfocus="startTyping()"
+            oninput="charecterTyped()"></textarea>
+        <button id="restartBtn" onclick="startTyping()">Restart</button>
+    </div>
+    <script src="./Scripts/index.js"></script>
+</body>
+
+</html>
