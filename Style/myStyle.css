@@ -1,0 +1,100 @@
+body {
+    background-color: blue;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading {
+    margin-bottom: 20px;
+    font-size: 3rem;
+    color: antiquewhite;
+}
+
+.scoreBoard {
+    display: flex;
+    align-items: center;
+}
+
+.wordPerMinute,
+.charecterPerMinute,
+.errorsCounter,
+.timeCounter,
+.accuracyCounter {
+    background-color: green;
+    height: 50px;
+    width: 80px;
+    margin: 8px;
+    border-radius: 20%;
+    padding: 10px;
+    box-shadow: black 5px 8px 5px;
+    color: antiquewhite;
+}
+
+.wordPerMinute,
+.charecterPerMinute {
+    display: none;
+}
+
+.header {
+    text-transform: uppercase;
+    font-size: 0.6rem;
+    font-weight: 600;
+}
+
+.wpm,
+.cpm,
+.errors,
+.time,
+.accuracy {
+    font-size: 1.6em;
+    margin: 5px;
+}
+
+#typingText {
+    background-color: darkcyan;
+    color: whitesmoke;
+    margin: 30px;
+    padding: 10px;
+    height: 30px;
+    width: auto;
+    border-radius: 10px;
+    font-size: 1.5rem;
+}
+
+#typingArea
+{
+    background-color: #f5f5c6;
+    height: 80px;
+    width: 40%;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 15px;
+    padding: 20px;
+    border: 0px;
+    box-shadow: black 5px 8px 5px;
+}
+#restartBtn
+{
+    display: none;
+    background-color: #326765;
+    font-size: 1.5rem;
+    padding: 10px;
+    border: 0px;
+    color: antiquewhite;
+    box-shadow: black 5px 8px 5px;
+}
+
+.incorrect_char {
+    color: red;
+    text-decoration: underline;
+}
+
+.correct_char {
+    color: darkgreen;
+}
